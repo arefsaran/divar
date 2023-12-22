@@ -1,0 +1,26 @@
+{
+  "name": "divar",
+  "version": "1.0.0",
+  "description": "A Fullstack project like https://divar.ir/ is being developed.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arefsaran/divar.git"
+  },
+  "keywords": [
+    "fullstack"
+  ],
+  "author": "Aref Saran",
+  "license": "LICENSE",
+  "bugs": {
+    "url": "https://github.com/arefsaran/divar/issues"
+  },
+  "homepage": "https://github.com/arefsaran/divar#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  }
+}
