@@ -5,4 +5,4 @@ const router = Router();
 router.post("/send-otp", authController.sendOTP);
 router.post("/check-otp", authController.checkOTP);
 
-module.exports = { Authrouer: router };
+module.exports = { authRoutes: router };
