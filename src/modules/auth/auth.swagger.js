@@ -17,6 +17,16 @@
  *              properties:
  *                  mobile:
  *                      type: string
+ *          CheckOTP:
+ *              type: object
+ *              required:
+ *                  -   mobile
+ *                  -   code
+ *              properties:
+ *                  mobile:
+ *                      type: string
+ *                  code:
+ *                      type: string
  */
 
 /**
@@ -35,6 +45,28 @@
  *              application/x-www-form-urlencoded:
  *                  schema:
  *                      $ref: "/#/components/schemas/SendOTP"
+ *      responses:
+ *          200:
+ *              description: success
+ *
+ */
+
+/**
+ * @swagger
+ *
+ * /auth/check-otp:
+ *  post:
+ *      summary: Check OTP for login user
+ *      tags:
+ *          -   Auth
+ *      requestBody:
+ *          content:
+ *              application/json:
+ *                  schema:
+ *                      $ref: "/#/components/schemas/CheckOTP"
+ *              application/x-www-form-urlencoded:
+ *                  schema:
+ *                      $ref: "/#/components/schemas/CheckOTP"
  *      responses:
  *          200:
  *              description: success

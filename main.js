@@ -12,8 +12,8 @@ async function main() {
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
     require("./src/config/mongoose.config");
-    SwaggerConfig(app);
     app.use(mainRouter);
+    SwaggerConfig(app);
     AllExpectionHandler(app);
     NotFoundHandler(app);
     app.listen(port, () => {
