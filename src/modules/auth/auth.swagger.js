@@ -72,3 +72,17 @@
  *              description: success
  *
  */
+
+/**
+ * @swagger
+ *
+ * /auth/logout:
+ *  get:
+ *      summary: Logout user from this end-point
+ *      tags:
+ *          -   Auth
+ *      responses:
+ *          200:
+ *              description: success
+ *
+ */
