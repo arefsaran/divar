@@ -13,7 +13,7 @@ class CategoryService {
     }
     async find() {
         return await this.#model
-            .find({ parent: { $exist: false } })
+            .find({ parent: { $exists: false } })
             .populate([{ path: "children" }]);
     }
     async create(categoryDTO) {
