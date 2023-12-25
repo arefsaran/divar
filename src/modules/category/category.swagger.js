@@ -43,8 +43,8 @@
  *                  schema:
  *                      $ref: "/#/components/schemas/CreateCategory"
  *      responses:
- *          200:
- *              description: successfully
+ *          201:
+ *              description: Created successfully
  *
  */
 

@@ -1,7 +1,5 @@
 const userService = require("./user.service");
 const autoBind = require("auto-bind");
-const UserMessage = require("./user.messages");
-const { NodeEnvironment } = require("../../common/constant/env.enum");
 
 class UserController {
     #service;
